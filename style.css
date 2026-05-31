@@ -1,0 +1,74 @@
+body{
+    margin:0;
+    font-family:'Times New Roman', Times, serif, sans-serif;
+    background:linear-gradient(to right,#ffffff,#ffffff);
+}
+
+nav{
+    width:700px;
+    margin:20px auto;
+    background:#0066cc;
+    display:flex;
+}
+
+nav a{
+    flex:1;
+    text-align:center;
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-right:1px solid rgb(255, 255, 255);
+    font-weight:bold;
+}
+
+nav a:last-child{
+    border-right:none;
+}
+
+.contenedor{
+    width: 650px;
+    margin: 40px auto;
+    background: #57e5ff;
+    border: 5px solid #2f6fd6;
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 0 5px #000000;
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.campos{
+    width: 75%;
+}
+
+.campos label{
+    display: inline-block;
+    width: 160px;
+    font-weight: bold;
+    color: #050608;
+    margin-bottom: 15px;
+}
+
+.campos input{
+    width: 220px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.boton{
+    width: 40%;
+    text-align: center;
+}
+
+.boton button{
+    width: 110px;
+    height: 90px;
+    background: white;
+    border: 1px solid rgb(15, 7, 7);
+    font-size: 20px;
+    cursor: pointer;
+}
