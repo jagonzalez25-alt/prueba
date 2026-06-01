@@ -9,9 +9,10 @@
 
 <nav>
     <a href="inicio.html">Inicio</a>
+    <a href="conocenos.html">Conócenos</a>
     <a href="producto.html">Productos</a>
-    <a href="conocenos.html">Conocenos</a>
     <a href="registro.html">Registro</a>
+     <a href="contacto.html">Contacto</a>
 </nav>
 
 <div class="contenedor">
@@ -20,19 +21,32 @@
 
         <div class="campos">
 
-            <label>Nombre</label>
-            <input type="text"><br>
+            <div class="fila">
+                <label>Web:</label>
+                <input type="url" id="web">
+            </div>
 
-            <label>Correo</label>
-            <input type="email"><br>
+            <div class="fila">
+                <label>Nombre:</label>
+                <input type="text">
+            </div>
 
-            <label>Fecha de nacimiento</label>
-            <input type="date">
+            <div class="fila">
+                <label>Apellido:</label>
+                <input type="text">
+            </div>
 
         </div>
 
         <div class="boton">
-            <button>Buscar</button>
+            <button onclick="buscarWeb()">Buscar</button>
+
+<script>
+function buscarWeb() {
+    let web = document.getElementById("web").value;
+    window.open(web, "_blank");
+}
+</script>
         </div>
 
     </div>

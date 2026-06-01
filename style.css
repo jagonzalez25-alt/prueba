@@ -1,74 +1,83 @@
 body{
     margin:0;
-    font-family:'Times New Roman', Times, serif, sans-serif;
-    background:linear-gradient(to right,#ffffff,#ffffff);
+    font-family: Arial, sans-serif;
+    background:white;
 }
 
+/* MENU */
 nav{
-    width:700px;
+    width:900px;
     margin:20px auto;
-    background:#0066cc;
     display:flex;
+    border:1px solid #1d4fa3;
 }
 
 nav a{
     flex:1;
     text-align:center;
-    color:white;
     text-decoration:none;
-    padding:12px;
-    border-right:1px solid rgb(255, 255, 255);
-    font-weight:bold;
+    color:black;
+    padding:15px;
+    font-size:30px;
+    background:linear-gradient(#5a8fe6,#3d74d1);
+    border-right:1px solid #1d4fa3;
 }
 
 nav a:last-child{
     border-right:none;
 }
 
+/* CUADRO AZUL */
 .contenedor{
-    width: 650px;
-    margin: 40px auto;
-    background: #57e5ff;
-    border: 5px solid #2f6fd6;
-    border-radius: 25px;
-    padding: 30px;
-    box-shadow: 0 0 5px #000000;
+    width:950px;
+    margin:60px auto;
+    background:linear-gradient(#a8f2ff,#4ed9ff);
+    border:12px solid #103f9e;
+    border-radius:50px;
+    padding:60px;
 }
 
+/* FORMULARIO */
 .formulario{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .campos{
-    width: 75%;
+    width:70%;
+}
+
+.fila{
+    margin-bottom:25px;
 }
 
 .campos label{
-    display: inline-block;
-    width: 160px;
-    font-weight: bold;
-    color: #050608;
-    margin-bottom: 15px;
+    display:inline-block;
+    width:180px;
+    font-size:24px;
+    font-weight:bold;
+    color:#0c2f7a;
 }
 
 .campos input{
-    width: 220px;
-    padding: 5px;
-    margin-bottom: 15px;
+    width:380px;
+    height:35px;
+    font-size:20px;
 }
 
+/* BOTON */
 .boton{
-    width: 40%;
-    text-align: center;
+    width:25%;
+    text-align:center;
 }
 
 .boton button{
-    width: 110px;
-    height: 90px;
-    background: white;
-    border: 1px solid rgb(15, 7, 7);
-    font-size: 20px;
-    cursor: pointer;
+    width:220px;
+    height:180px;
+    background:white;
+    border:1px solid #888;
+    font-size:42px;
+    font-style:italic;
+    color:#163fa3;
 }
